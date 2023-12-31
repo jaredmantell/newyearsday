@@ -1,8 +1,3 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
-};
+const withTM = require('next-transpile-modules')(['three']);
 
-module.exports = nextConfig;
+module.exports = withTM();

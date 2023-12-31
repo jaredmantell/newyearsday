@@ -1,72 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
-  content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+  mode: 'jit',
+  content: ["./public/**/*.{html,js}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '1rem',
       screens: {
-        "2xl": "1400px",
+        xl: '1156px',
       },
     },
     extend: {
-      colors: {
-        primary: {
-          100: "#96C7FF",
-          300: "#72B4FF",
-          500: "#50a2ff",
-          700: "#4891E5",
-          900: "#4081CC",
-        },
-        neutral: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
-          950: "#020617",
-        },
-        accent: {
-          100: "#F69D9E",
-          300: "#F37D7E",
-          500: "#f05d5e",
-          700: "#C04A4B",
-          900: "#C04A4B",
-        },
-        success: "#77dd77",
-        destructive: "#FF4040",
+      fontSize: {
+        lg: '22.62px',
+        xl: '31.99px',
+        '2xl': '45.23px',
+        '3xl': '63.96px',
+        '4xl': '90.44px',
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      colors: {
+        bg: '#FFFFFF',
+        primary: '#1D1B25',
+        text: '#201F27'
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
+        marquee: {
+          from: { transform: 'translate3d(0, 0, 0)' },
+          to: { transform: 'translate3d(-100%, 0, 0)' },
+        }
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: 'marquee 30s linear infinite',
       },
+      height: {
+        'screen-90': '90vh'
+      }
     },
   },
-  plugins: [require("tailwindcss-animate")],
-};
+  plugins: [],
+}

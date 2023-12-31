@@ -1,0 +1,41 @@
+.button, .button2 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .button:before, .button2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+  
+  .button:hover:before, .button2:hover:before {
+    transform: translateX(0);
+  }
+  
+  .button {
+    background: linear-gradient(270deg, #f00, #0f0);
+  }
+  
+  .button:before {
+    background: linear-gradient(270deg, #f00, #0f0);
+  }
+  
+  .button2 {
+    background: linear-gradient(270deg, #00f, #fff);
+  }
+  
+  .button2:before {
+    background: linear-gradient(270deg, #00f, #fff);
+  }
