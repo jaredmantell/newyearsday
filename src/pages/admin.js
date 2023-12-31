@@ -26,7 +26,7 @@ const AdminPage = () => {
 
     return (
         <div>
-            <h1>Create a New Blog Post</h1>
+            <h1>Create a New Post</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="title">Title</label>

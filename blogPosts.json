@@ -2,4 +2,9 @@
   {
     "title": "0thPost",
     "body": "***hello, world***"
-  }]
+  },
+  {
+    "title": "",
+    "body": "test"
+  }
+]
