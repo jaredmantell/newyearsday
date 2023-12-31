@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "cp -R .next/ public/",
     "start": "next start"
   },
   "dependencies": {
