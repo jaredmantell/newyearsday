@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <div className="page-wrapper">
       <Stars />
-      <h1 style={{ textAlign: 'center', color: '#FFFFFF' }}>Welcome to 2024's resolution space</h1>
+      <h1 style={{ textAlign: 'center', color: '#FFFFFF' }}>Welcome to Our Demo Site, make a post!</h1>
       <div className="box-wrap" style={{ width: '40%', margin: '0 auto' }}>
         <div id="audio" className="box open-left">
           <div style={linkSectionStyle}>
